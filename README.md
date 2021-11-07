@@ -4,7 +4,7 @@ It is an executable bash script for installing selected extensions and importing
 
 ### Installation
 
-Clone or download the repository and then run the file in the terminal where you downloaded it:
+Download or clone the repository and then run the bash file:
 
 ```bash
 $ ./vscode-settings-and-extensions-import.sh
