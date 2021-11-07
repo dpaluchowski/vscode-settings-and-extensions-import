@@ -2,6 +2,24 @@
 
 It is an executable bash script for installing selected extensions and importing settings into Visual Studio Code.
 
+### Installation
+
+Clone or download the repository and then run the file in the terminal where you downloaded it:
+
+```bash
+$ ./vscode-settings-and-extensions-import.sh
+```
+
+### In case of permission issues
+
+Run this command as administrator:
+
+```bash
+$ sudo chmod u+x vscode-settings-and-extensions-import.sh
+```
+
+And then try running the file again
+
 ### List of extensions:
 
 - https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag
@@ -76,24 +94,6 @@ It is an executable bash script for installing selected extensions and importing
   }
 }
 ```
-
-### Installation
-
-Clone or download the repository and then run the file in the terminal where you downloaded it:
-
-```bash
-$ ./vscode-settings-and-extensions-import.sh
-```
-
-### In case of permission issues
-
-Run this command as administrator:
-
-```bash
-$ sudo chmod u+x vscode-settings-and-extensions-import.sh
-```
-
-And then try running the file again
 
 ## License
 
