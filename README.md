@@ -7,7 +7,7 @@ It is an executable bash script for installing selected extensions and importing
 Download or clone the repository and then run the bash file:
 
 ```bash
-$ ./vscode-settings-and-extensions-import.sh
+./vscode-settings-and-extensions-import.sh
 ```
 
 ### In case of permission issues
@@ -15,7 +15,7 @@ $ ./vscode-settings-and-extensions-import.sh
 Run this command as administrator:
 
 ```bash
-$ sudo chmod u+x vscode-settings-and-extensions-import.sh
+sudo chmod u+x vscode-settings-and-extensions-import.sh
 ```
 
 And then try running the file again
