@@ -97,7 +97,13 @@ And then try running the file again
   "workbench.colorTheme": "Material Deep Ocean",
   "[shellscript]": {
     "editor.defaultFormatter": "shakram02.bash-beautify"
-  }
+  },
+  "multiCommand.commands": [
+    {
+      "command": "multiCommand.commentDown",
+      "sequence": ["editor.action.commentLine", "cursorDown"]
+    }
+  ]
 }
 ```
 
