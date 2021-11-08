@@ -16,7 +16,7 @@ echo "Do you want to install the following extensions for Visual Studio Code?"
 sleep 0.25
 echo ""
 sleep 0.25
-echo "alefragnani.Bookmarks, dbaeumer.vscode-eslint, dsznajder.es7-react-js-snippets, eamodio.gitlens, eg2.vscode-npm-script, Equinusocio.vsc-community-material-theme, Equinusocio.vsc-material-theme, equinusocio.vsc-material-theme-icons, esbenp.prettier-vscode, formulahendry.auto-close-tag, formulahendry.terminal, GitHub.github-vscode-theme, Gruntfuggly.todo-tree, humao.rest-client, k--kato.intellij-idea-keybindings, KYDronePilot.material-deep-ocean-theme, mgmcdermott.vscode-language-babel, ms-azuretools.vscode-docker, MS-CEINTL.vscode-language-pack-pl, ms-python.python, ms-python.vscode-pylance, ms-vsliveshare.vsliveshare, PKief.material-icon-theme, ritwickdey.LiveServer, sburg.vscode-javascript-booster, TabNine.tabnine-vscode, VisualStudioExptTeam.vscodeintellicode, WallabyJs.quokka-vscode, wholroyd.jinja, xabikos.JavaScriptSnippets"
+echo "abusaidm.html-snippets, alefragnani.Bookmarks, dbaeumer.vscode-eslint, dsznajder.es7-react-js-snippets, eamodio.gitlens, ecmel.vscode-html-css, eg2.vscode-npm-script, esbenp.prettier-vscode, formulahendry.auto-close-tag, formulahendry.terminal, Gruntfuggly.todo-tree, humao.rest-client, k--kato.intellij-idea-keybindings, KYDronePilot.material-deep-ocean-theme, mgmcdermott.vscode-language-babel, ms-azuretools.vscode-docker, MS-CEINTL.vscode-language-pack-pl, ms-python.python, ms-python.vscode-pylance, ms-vsliveshare.vsliveshare, PKief.material-icon-theme, ritwickdey.LiveServer, sburg.vscode-javascript-booster, TabNine.tabnine-vscode, VisualStudioExptTeam.vscodeintellicode, WallabyJs.quokka-vscode, wholroyd.jinja, xabikos.JavaScriptSnippets"
 sleep 0.25
 echo ""
 while true; do
