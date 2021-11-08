@@ -12,7 +12,7 @@ echo "---------------------------------------"
 sleep 0.25
 echo ""
 sleep 0.25
-echo "Do you want to install the following extensions for Visual Studio Code?"
+echo "Do you want to install the following extensions for Visual Studio Code? (Previously installed extensions will be removed!)"
 sleep 0.25
 echo ""
 sleep 0.25
@@ -23,6 +23,7 @@ while true; do
     read -p "Please enter yes or no: " yn
     case $yn in
         [Yy]* )
+            rm -Rf ~/.vscode/extensions/*
             code --install-extension abusaidm.html-snippets
             code --install-extension alefragnani.Bookmarks
             code --install-extension dbaeumer.vscode-eslint
