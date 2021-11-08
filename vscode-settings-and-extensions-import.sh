@@ -26,6 +26,7 @@ while true; do
             rm -Rf ~/.vscode/extensions/*
             code --install-extension abusaidm.html-snippets
             code --install-extension alefragnani.Bookmarks
+            code --install-extension shakram02.bash-beautify
             code --install-extension dbaeumer.vscode-eslint
             code --install-extension dsznajder.es7-react-js-snippets
             code --install-extension eamodio.gitlens
