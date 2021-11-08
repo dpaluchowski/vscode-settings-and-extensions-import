@@ -16,7 +16,7 @@ echo "Do you want to install the following extensions for Visual Studio Code? (P
 sleep 0.25
 echo ""
 sleep 0.25
-echo "abusaidm.html-snippets, alefragnani.Bookmarks, dbaeumer.vscode-eslint, dsznajder.es7-react-js-snippets, eamodio.gitlens, ecmel.vscode-html-css, eg2.vscode-npm-script, esbenp.prettier-vscode, formulahendry.auto-close-tag, formulahendry.terminal, Gruntfuggly.todo-tree, humao.rest-client, k--kato.intellij-idea-keybindings, KYDronePilot.material-deep-ocean-theme, mgmcdermott.vscode-language-babel, ms-azuretools.vscode-docker, MS-CEINTL.vscode-language-pack-pl, ms-python.python, ms-python.vscode-pylance, ms-vsliveshare.vsliveshare, PKief.material-icon-theme, ritwickdey.LiveServer, ryuta46.multi-command, sburg.vscode-javascript-booster, TabNine.tabnine-vscode, VisualStudioExptTeam.vscodeintellicode, WallabyJs.quokka-vscode, wholroyd.jinja, xabikos.JavaScriptSnippets"
+echo "abusaidm.html-snippets, alefragnani.Bookmarks, dbaeumer.vscode-eslint, dsznajder.es7-react-js-snippets, eamodio.gitlens, ecmel.vscode-html-css, eg2.vscode-npm-script, esbenp.prettier-vscode, formulahendry.auto-close-tag, formulahendry.terminal, Gruntfuggly.todo-tree, humao.rest-client, k--kato.intellij-idea-keybindings, KYDronePilot.material-deep-ocean-theme, mgmcdermott.vscode-language-babel, ms-azuretools.vscode-docker, ms-python.python, ms-python.vscode-pylance, ms-vsliveshare.vsliveshare, PKief.material-icon-theme, ritwickdey.LiveServer, ryuta46.multi-command, sburg.vscode-javascript-booster, TabNine.tabnine-vscode, VisualStudioExptTeam.vscodeintellicode, WallabyJs.quokka-vscode, wholroyd.jinja, xabikos.JavaScriptSnippets"
 sleep 0.25
 echo ""
 while true; do
@@ -41,7 +41,6 @@ while true; do
             code --install-extension KYDronePilot.material-deep-ocean-theme
             code --install-extension mgmcdermott.vscode-language-babel
             code --install-extension ms-azuretools.vscode-docker
-            code --install-extension MS-CEINTL.vscode-language-pack-pl
             code --install-extension ms-python.python
             code --install-extension ms-python.vscode-pylance
             code --install-extension ms-vsliveshare.vsliveshare
