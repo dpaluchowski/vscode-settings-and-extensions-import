@@ -1,6 +1,7 @@
 # vscode settings and extensions import
 
 It is an executable bash script for installing selected extensions and importing settings into Visual Studio Code.
+**Extensions and settings are mainly configured to work in frontend development and React.js. In addition, it allows you to quite smoothly switch from WebStorm IDE to Visual Studio Code.**
 
 ### Installation
 
@@ -20,39 +21,37 @@ sudo chmod u+x vscode-settings-and-extensions-import.sh
 
 And then try running the file again
 
-### List of extensions (ID's):
+### List of extensions (with authors):
 
-- [formulahendry.auto-close-tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
-- [mgmcdermott.vscode-language-babel](https://marketplace.visualstudio.com/items?itemName=mgmcdermott.vscode-language-babel)
-- [alefragnani.Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
-- [alefragnani.Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
-- [Equinusocio.vsc-community-material-theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-community-material-theme)
-- [ms-azuretools.vscode-docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
-- [dsznajder.es7-react-js-snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
-- [dbaeumer.vscode-eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [GitHub.github-vscode-theme](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme)
-- [eamodio.gitlens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
-- [k--kato.intellij-idea-keybindings](https://marketplace.visualstudio.com/items?itemName=k--kato.intellij-idea-keybindings)
-- [xabikos.JavaScriptSnippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
-- [sburg.vscode-javascript-booster](https://marketplace.visualstudio.com/items?itemName=sburg.vscode-javascript-booster)
-- [wholroyd.jinja](https://marketplace.visualstudio.com/items?itemName=wholroyd.jinja)
-- [ritwickdey.LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-- [MS-vsliveshare.vsliveshare](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
-- [KYDronePilot.material-deep-ocean-theme](https://marketplace.visualstudio.com/items?itemName=KYDronePilot.material-deep-ocean-theme)
-- [PKief.material-icon-theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-- [Equinusocio.vsc-material-theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme)
-- [Equinusocio.vsc-material-theme-icons](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme-icons)
-- [eg2.vscode-npm-script](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script)
-- [MS-CEINTL.vscode-language-pack-pl](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-pl)
-- [esbenp.prettier-vscode](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-- [ms-python.vscode-pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)
-- [ms-python.python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
-- [WallabyJs.quokka-vscode](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode)
-- [humao.rest-client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
-- [TabNine.tabnine-vscode](https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode)
-- [formulahendry.terminal](https://marketplace.visualstudio.com/items?itemName=formulahendry.terminal)
-- [Gruntfuggly.todo-tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
-- [VisualStudioExptTeam.vscodeintellicode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
+- [Auto Close Tag (Jun Han)](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
+- [Babel JavaScript (Michael McDermott)](https://marketplace.visualstudio.com/items?itemName=mgmcdermott.vscode-language-babel)
+- [Bash Beautify (Ahmed Hamdy)](https://marketplace.visualstudio.com/items?itemName=shakram02.bash-beautify)
+- [Bookmarks (Alessandro Fragnani)](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
+- [Docker (Microsoft)](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
+- [ES7 React/Redux/GraphQL/React-Native snippetss (dsznajder)](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+- [ESLint (Dirk Baeumer)](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [GitLens — Git supercharged (GitKraken)](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+- [HTML CSS Support (ecmel)](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
+- [HTML Snippets (Mohamed Abusaid)](https://marketplace.visualstudio.com/items?itemName=abusaidm.html-snippets)
+- [IntelliJ IDEA Keybindings (Keisuke Kato)](https://marketplace.visualstudio.com/items?itemName=k--kato.intellij-idea-keybindings)
+- [JavaScript (ES6) code snippets (charalampos karypidis)](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
+- [JavaScript Booster (Stephan Burguchev)](https://marketplace.visualstudio.com/items?itemName=sburg.vscode-javascript-booster)
+- [Jinja (wholroyd)](https://marketplace.visualstudio.com/items?itemName=wholroyd.jinja)
+- [LiveServer (Ritwick Dey)](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+- [Live Share (Microsoft)](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
+- [Material Deep Ocean Theme (KYDronePilot)](https://marketplace.visualstudio.com/items?itemName=KYDronePilot.material-deep-ocean-theme)
+- [Material Icon Theme (Philipp Kief)](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+- [npm (egamma)](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script)
+- [Polish Language Pack for Visual Studio Code (Microsoft)](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-pl)
+- [Prettier - Code formatter (Prettier)](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [Pylance (Microsoft)](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)
+- [Python (Microsoft)](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+- [Quokka.js (Wallaby.js)](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode)
+- [REST Client (Huachao Mao)](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
+- [Tabnine - Code Faster with the All-Language AI Assistant for Code Completion, autocomplete JavaScript, Python, TypeScript, PHP, Go, Java, node.js, Ruby, C/C++, HTML/CSS, C#, Rust, SQL, Bash, Kotlin, R (TabNine)](https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode)
+- [Terminal (Jun Han)](https://marketplace.visualstudio.com/items?itemName=formulahendry.terminal)
+- [Todo Tree (Gruntfuggly)](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
+- [Visual Studio IntelliCode (Microsoft)](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
 
 ### Settings
 
@@ -65,7 +64,7 @@ And then try running the file again
   "terminal.integrated.fontSize": 12,
   "tabnine.experimentalAutoImports": true,
   "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
@@ -80,7 +79,6 @@ And then try running the file again
   "javascript.format.enable": false,
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
-  "workbench.colorTheme": "Material Theme Ocean",
   "workbench.tree.indent": 16,
   "window.zoomLevel": 0.3,
   "editor.suggestSelection": "first",
@@ -91,6 +89,13 @@ And then try running the file again
   "typescript.preferences.importModuleSpecifier": "non-relative",
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "workbench.colorTheme": "Material Deep Ocean",
+  "[shellscript]": {
+    "editor.defaultFormatter": "shakram02.bash-beautify"
   }
 }
 ```
