@@ -16,7 +16,7 @@ echo "Do you want to install the following extensions for Visual Studio Code? (P
 sleep 0.25
 echo ""
 sleep 0.25
-echo "abusaidm.html-snippets, alefragnani.Bookmarks, dbaeumer.vscode-eslint, dsznajder.es7-react-js-snippets, eamodio.gitlens, ecmel.vscode-html-css, eg2.vscode-npm-script, esbenp.prettier-vscode, formulahendry.auto-close-tag, formulahendry.terminal, Gruntfuggly.todo-tree, humao.rest-client, k--kato.intellij-idea-keybindings, KYDronePilot.material-deep-ocean-theme, mgmcdermott.vscode-language-babel, ms-azuretools.vscode-docker, ms-python.python, ms-python.vscode-pylance, ms-vsliveshare.vsliveshare, PKief.material-icon-theme, ritwickdey.LiveServer, ryuta46.multi-command, sburg.vscode-javascript-booster, TabNine.tabnine-vscode, VisualStudioExptTeam.vscodeintellicode, WallabyJs.quokka-vscode, wholroyd.jinja, xabikos.JavaScriptSnippets"
+echo "abusaidm.html-snippets, alefragnani.Bookmarks, buenon.scratchpads, CoenraadS.bracket-pair-colorizer, dbaeumer.vscode-eslint, dsznajder.es7-react-js-snippets, eamodio.gitlens, ecmel.vscode-html-css, eg2.vscode-npm-script, esbenp.prettier-vscode, formulahendry.auto-close-tag, formulahendry.auto-rename-tag, formulahendry.terminal, Gruntfuggly.todo-tree, humao.rest-client, jerrygoyal.shortcut-menu-bar, k--kato.intellij-idea-keybindings, KYDronePilot.material-deep-ocean-theme, mgmcdermott.vscode-language-babel, ms-azuretools.vscode-docker, ms-python.python, ms-python.vscode-pylance, ms-vsliveshare.vsliveshare, PKief.material-icon-theme, ritwickdey.LiveServer, ryuta46.multi-command, sburg.vscode-javascript-booster, shakram02.bash-beautify, streetsidesoftware.code-spell-checker, TabNine.tabnine-vscode, VisualStudioExptTeam.vscodeintellicode, WallabyJs.quokka-vscode, wholroyd.jinja, xabikos.JavaScriptSnippets"
 sleep 0.25
 echo ""
 while true; do
@@ -26,7 +26,8 @@ while true; do
             rm -Rf ~/.vscode/extensions/*
             code --install-extension abusaidm.html-snippets
             code --install-extension alefragnani.Bookmarks
-            code --install-extension shakram02.bash-beautify
+            code --install-extension buenon.scratchpads
+            code --install-extension CoenraadS.bracket-pair-colorizer
             code --install-extension dbaeumer.vscode-eslint
             code --install-extension dsznajder.es7-react-js-snippets
             code --install-extension eamodio.gitlens
@@ -34,9 +35,11 @@ while true; do
             code --install-extension eg2.vscode-npm-script
             code --install-extension esbenp.prettier-vscode
             code --install-extension formulahendry.auto-close-tag
+            code --install-extension formulahendry.auto-rename-tag
             code --install-extension formulahendry.terminal
             code --install-extension Gruntfuggly.todo-tree
             code --install-extension humao.rest-client
+            code --install-extension jerrygoyal.shortcut-menu-bar
             code --install-extension k--kato.intellij-idea-keybindings
             code --install-extension KYDronePilot.material-deep-ocean-theme
             code --install-extension mgmcdermott.vscode-language-babel
@@ -44,10 +47,12 @@ while true; do
             code --install-extension ms-python.python
             code --install-extension ms-python.vscode-pylance
             code --install-extension ms-vsliveshare.vsliveshare
-            code --install-extension ryuta46.multi-command
             code --install-extension PKief.material-icon-theme
             code --install-extension ritwickdey.LiveServer
+            code --install-extension ryuta46.multi-command
             code --install-extension sburg.vscode-javascript-booster
+            code --install-extension shakram02.bash-beautify
+            code --install-extension streetsidesoftware.code-spell-checker
             code --install-extension TabNine.tabnine-vscode
             code --install-extension VisualStudioExptTeam.vscodeintellicode
             code --install-extension WallabyJs.quokka-vscode
