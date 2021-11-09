@@ -60,52 +60,52 @@ And then try running the file again
 
 ```json
 {
-  "workbench.iconTheme": "material-icon-theme,
-  "editor.fontFamily": "Fira Code,
-  "editor.fontLigatures": tru,
-  "editor.fontSize": 12.,
-  "terminal.integrated.fontSize": 1,
-  "tabnine.experimentalAutoImports": tru,
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 12.8,
+  "terminal.integrated.fontSize": 12,
+  "tabnine.experimentalAutoImports": true,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  ,
+  },
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": tru,
+    "source.fixAll.eslint": true,
     "source.fixAll.tslint": true
-  ,
-  "editor.defaultFormatter": "esbenp.prettier-vscode,
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "eslint.workingDirectories": [
     {
       "mode": "auto"
     }
-  ,
-  "javascript.format.enable": fals,
-  "editor.tabSize": ,
-  "editor.formatOnSave": tru,
-  "workbench.tree.indent": 1,
-  "window.zoomLevel": 0.,
-  "editor.suggestSelection": "first,
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue,
-  "gitlens.currentLine.enabled": fals,
-  "javascript.updateImportsOnFileMove.enabled": "always,
-  "explorer.confirmDragAndDrop": fals,
-  "typescript.preferences.importModuleSpecifier": "non-relative,
+  ],
+  "javascript.format.enable": false,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "workbench.tree.indent": 16,
+  "window.zoomLevel": 0.3,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "gitlens.currentLine.enabled": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDragAndDrop": false,
+  "typescript.preferences.importModuleSpecifier": "non-relative",
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
-  ,
+  },
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
-  ,
-  "workbench.colorTheme": "Material Deep Ocean,
+  },
+  "workbench.colorTheme": "Material Deep Ocean",
   "[shellscript]": {
     "editor.defaultFormatter": "shakram02.bash-beautify"
-  ,
+  },
   "multiCommand.commands": [
     {
-      "command": "multiCommand.commentDown,
-      "sequence": ["editor.action.commentLine, "cursorDown"]
+      "command": "multiCommand.commentDown",
+      "sequence": ["editor.action.commentLine", "cursorDown"]
     }
-  ,
+  ],
   "[python]": {
     "editor.defaultFormatter": "ms-python.python"
   }
