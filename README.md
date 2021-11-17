@@ -114,7 +114,8 @@ And then try running the file again
     "editorSuggestWidget.background": "#181a1f",
     "editorSuggestWidget.border": "#0f111a",
     "editorSuggestWidget.highlightForeground": "#4bc8e8",
-    "editorSuggestWidget.selectedBackground": "#1f2233"
+    "editorSuggestWidget.selectedBackground": "#1f2233",
+    "focusBorder": "#84ffff2f"
   },
   "workbench.colorTheme": "Material Deep Ocean",
   "workbench.iconTheme": "material-icon-theme",
