@@ -65,75 +65,59 @@ And then try running the file again
 
 ```json
 {
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  ,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  ,
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  ,
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.python"
-  ,
-  "[shellscript]": {
-    "editor.defaultFormatter": "shakram02.bash-beautify"
-  ,
-  "[svg]": {
-    "editor.defaultFormatter": "jock.svg"
-  ,
-  "cSpell.userWords": ["Neutralino",
+  "[html]": { "editor.defaultFormatter": "vscode.html-language-features" },
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[jsonc]": { "editor.defaultFormatter": "vscode.json-language-features" },
+  "[python]": { "editor.defaultFormatter": "ms-python.python" },
+  "[shellscript]": { "editor.defaultFormatter": "shakram02.bash-beautify" },
+  "[svg]": { "editor.defaultFormatter": "jock.svg" },
+  "cSpell.userWords": ["Neutralino"],
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": tru,
+    "source.fixAll.eslint": true,
     "source.fixAll.tslint": true
-  ,
-  "editor.cursorBlinking": "expand,
-  "editor.cursorSmoothCaretAnimation": fals,
-  "editor.defaultFormatter": "esbenp.prettier-vscode,
-  "editor.fontFamily": "Fira Code,
-  "editor.fontLigatures": tru,
-  "editor.fontSize": 12.,
-  "editor.formatOnSave": tru,
-  "editor.suggestSelection": "first,
-  "editor.tabSize": ,
-  "eslint.workingDirectories": [
-    {
-      "mode": "auto"
-    }
-  ,
-  "explorer.compactFolders": fals,
-  "explorer.confirmDelete": fals,
-  "explorer.confirmDragAndDrop": fals,
-  "gitlens.currentLine.enabled": fals,
-  "javascript.format.enable": fals,
-  "javascript.updateImportsOnFileMove.enabled": "always,
-  "javascript.validate.enable": fals,
+  },
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 12.8,
+  "editor.formatOnSave": true,
+  "editor.suggestSelection": "first",
+  "editor.tabSize": 2,
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "gitlens.currentLine.enabled": false,
+  "javascript.format.enable": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.validate.enable": false,
   "multiCommand.commands": [
     {
-      "command": "multiCommand.commentDown,
-      "sequence": ["editor.action.commentLine, "cursorDown"]
+      "command": "multiCommand.commentDown",
+      "sequence": ["editor.action.commentLine", "cursorDown"]
     }
-  ,
-  "quokka.automaticStartRegex": ",
-  "sort-imports.on-save": tru,
-  "svg.preview.mode": "svg,
-  "tabnine.experimentalAutoImports": tru,
-  "telemetry.telemetryLevel": "off,
-  "terminal.integrated.fontSize": 1,
-  "typescript.preferences.importModuleSpecifier": "relative,
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue,
+  ],
+  "quokka.automaticStartRegex": "",
+  "sort-imports.on-save": true,
+  "svg.preview.mode": "svg",
+  "tabnine.experimentalAutoImports": true,
+  "telemetry.telemetryLevel": "off",
+  "terminal.integrated.fontSize": 12,
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "workbench.colorCustomizations": {
-    "editor.selectionBackground": "#3b3f51,
-    "editorCursor.background": "#3b3f51,
-    "editorCursor.foreground": "#ffcc00,
-    "editorSuggestWidget.background": "#181a1f,
-    "editorSuggestWidget.border": "#0f111a,
-    "editorSuggestWidget.highlightForeground": "#4bc8e8,
+    "editor.selectionBackground": "#3b3f51",
+    "editorCursor.background": "#3b3f51",
+    "editorCursor.foreground": "#ffcc00",
+    "editorSuggestWidget.background": "#181a1f",
+    "editorSuggestWidget.border": "#0f111a",
+    "editorSuggestWidget.highlightForeground": "#4bc8e8",
     "editorSuggestWidget.selectedBackground": "#1f2233"
-  ,
-  "workbench.colorTheme": "Material Deep Ocean,
-  "workbench.iconTheme": "material-icon-theme,
+  },
+  "workbench.colorTheme": "Material Deep Ocean",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.tree.indent": 16
 }
 ```
@@ -143,18 +127,18 @@ And then try running the file again
 ```json
 [
   {
-    "key": "ctrl+/,
-    "command": "multiCommand.commentDown,
+    "key": "ctrl+/",
+    "command": "multiCommand.commentDown",
     "when": "editorTextFocus && !editorReadonly"
-  ,
+  },
   {
-    "key": "ctrl+numpad7,
-    "command": "workbench.action.debug.run,
+    "key": "ctrl+numpad7",
+    "command": "workbench.action.debug.run",
     "when": "debuggersAvailable && !inDebugMode && !terminalFocus"
-  ,
+  },
   {
-    "key": "shift+f9,
-    "command": "-workbench.action.debug.run,
+    "key": "shift+f9",
+    "command": "-workbench.action.debug.run",
     "when": "debuggersAvailable && !inDebugMode && !terminalFocus"
   }
 ]
