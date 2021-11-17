@@ -30,10 +30,12 @@ And then try running the file again
 - [Bash Beautify (Ahmed Hamdy)](https://marketplace.visualstudio.com/items?itemName=shakram02.bash-beautify)
 - [Bookmarks (Alessandro Fragnani)](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
 - [Code Spell Checker (Street Side Software)](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+- [Color Highlight (Sergii Naumov)](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
 - [Docker (Microsoft)](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
 - [ES7 React/Redux/GraphQL/React-Native snippetss (dsznajder)](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
 - [ESLint (Dirk Baeumer)](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Fold Plus (dakara)](https://marketplace.visualstudio.com/items?itemName=dakara.dakara-foldplus)
+- [Git History (Don Jayamanne)](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
 - [GitLens — Git supercharged (GitKraken)](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 - [HTML CSS Support (ecmel)](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
 - [HTML Snippets (Mohamed Abusaid)](https://marketplace.visualstudio.com/items?itemName=abusaidm.html-snippets)
@@ -58,6 +60,8 @@ And then try running the file again
 - [Visual Studio IntelliCode (Microsoft)](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
 - [multi-command (ryuta46)](https://marketplace.visualstudio.com/items?itemName=ryuta46.multi-command)
 - [npm (egamma)](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script)
+- [npm Intellisense (Christian Kohler)](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)
+- [Polacode (P & P)](https://marketplace.visualstudio.com/items?itemName=pnp.polacode)
 - [sort-imports (VSC Sort Import)](https://marketplace.visualstudio.com/items?itemName=amatiasq.sort-imports)
 - [vscode-styled-components (Julien Poissonnier)](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)
 
@@ -71,7 +75,7 @@ And then try running the file again
   "[python]": { "editor.defaultFormatter": "ms-python.python" },
   "[shellscript]": { "editor.defaultFormatter": "shakram02.bash-beautify" },
   "[svg]": { "editor.defaultFormatter": "jock.svg" },
-  "cSpell.userWords": ["Neutralino"],
+  "cSpell.userWords": ["Neutralino", "preconnect"],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
     "source.fixAll.tslint": true
@@ -89,6 +93,8 @@ And then try running the file again
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "git.autofetch": true,
+  "git.confirmSync": false,
   "gitlens.currentLine.enabled": false,
   "javascript.format.enable": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
