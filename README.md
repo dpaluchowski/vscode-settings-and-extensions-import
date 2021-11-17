@@ -1,7 +1,7 @@
 # vscode settings and extensions import
 
 It is an executable bash script for installing selected extensions and importing settings into Visual Studio Code.
-**Extensions and settings are mainly configured to work in frontend development and React.js. In additi, it allows you to quite smoothly switch from WebStorm IDE to Visual Studio Code.**
+**Extensions and settings are mainly configured to work in frontend development and React.js. In addit, it allows you to quite smoothly switch from WebStorm IDE to Visual Studio Code.**
 
 ### Installation
 
@@ -24,6 +24,7 @@ And then try running the file again
 ### List of extensions (with authors):
 
 - [Auto Close Tag (Jun Han)](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
+- [Auto Import (steoates)](https://marketplace.visualstudio.com/items?itemName=steoates.autoimport)
 - [Auto Rename Tag (Jun Han)](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 - [Babel JavaScript (Michael McDermott)](https://marketplace.visualstudio.com/items?itemName=mgmcdermott.vscode-language-babel)
 - [Bash Beautify (Ahmed Hamdy)](https://marketplace.visualstudio.com/items?itemName=shakram02.bash-beautify)
@@ -32,6 +33,7 @@ And then try running the file again
 - [Docker (Microsoft)](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
 - [ES7 React/Redux/GraphQL/React-Native snippetss (dsznajder)](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
 - [ESLint (Dirk Baeumer)](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Fold Plus (dakara)](https://marketplace.visualstudio.com/items?itemName=dakara.dakara-foldplus)
 - [GitLens — Git supercharged (GitKraken)](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 - [HTML CSS Support (ecmel)](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
 - [HTML Snippets (Mohamed Abusaid)](https://marketplace.visualstudio.com/items?itemName=abusaidm.html-snippets)
@@ -48,13 +50,16 @@ And then try running the file again
 - [Python (Microsoft)](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 - [Quokka.js (Wallaby.js)](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode)
 - [REST Client (Huachao Mao)](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
+- [SVG (jock)](https://marketplace.visualstudio.com/items?itemName=jock.svg)
 - [Shortcut Menu Bar (GorvGoyl)](https://marketplace.visualstudio.com/items?itemName=jerrygoyal.shortcut-menu-bar)
-- [Tabnine - Code Faster with the All-Language AI Assistant for Code Completi, autocomplete JavaScri, Pyth, TypeScri, P, , Ja, node., Ru, C/C, HTML/C, , Ru, S, Ba, Kotl, R (TabNine)](https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode)
+- [Tabnine - Code Faster with the All-Language AI Assistant for Code Complet, autocomplete JavaScr, Pyt, TypeScr, ,, J, node, R, C/, HTML/,, R, , B, Kot, R (TabNine)](https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode)
 - [Terminal (Jun Han)](https://marketplace.visualstudio.com/items?itemName=formulahendry.terminal)
 - [Todo Tree (Gruntfuggly)](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
 - [Visual Studio IntelliCode (Microsoft)](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
 - [multi-command (ryuta46)](https://marketplace.visualstudio.com/items?itemName=ryuta46.multi-command)
 - [npm (egamma)](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script)
+- [sort-imports (VSC Sort Import)](https://marketplace.visualstudio.com/items?itemName=amatiasq.sort-imports)
+- [vscode-styled-components (Julien Poissonnier)](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)
 
 ### Settings
 
@@ -62,66 +67,97 @@ And then try running the file again
 {
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
-  },
+  ,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  ,
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
-  },
+  ,
   "[python]": {
     "editor.defaultFormatter": "ms-python.python"
-  },
+  ,
   "[shellscript]": {
     "editor.defaultFormatter": "shakram02.bash-beautify"
-  },
+  ,
+  "[svg]": {
+    "editor.defaultFormatter": "jock.svg"
+  ,
+  "cSpell.userWords": ["Neutralino",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
+    "source.fixAll.eslint": tru,
     "source.fixAll.tslint": true
-  },
-  "editor.cursorBlinking": "expand",
-  "editor.cursorSmoothCaretAnimation": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.fontFamily": "Fira Code",
-  "editor.fontLigatures": true,
-  "editor.fontSize": 12.8,
-  "editor.formatOnSave": true,
-  "editor.suggestSelection": "first",
-  "editor.tabSize": 2,
+  ,
+  "editor.cursorBlinking": "expand,
+  "editor.cursorSmoothCaretAnimation": fals,
+  "editor.defaultFormatter": "esbenp.prettier-vscode,
+  "editor.fontFamily": "Fira Code,
+  "editor.fontLigatures": tru,
+  "editor.fontSize": 12.,
+  "editor.formatOnSave": tru,
+  "editor.suggestSelection": "first,
+  "editor.tabSize": ,
   "eslint.workingDirectories": [
     {
       "mode": "auto"
     }
-  ],
-  "explorer.confirmDragAndDrop": false,
-  "gitlens.currentLine.enabled": false,
-  "javascript.format.enable": false,
-  "javascript.updateImportsOnFileMove.enabled": "always",
+  ,
+  "explorer.compactFolders": fals,
+  "explorer.confirmDelete": fals,
+  "explorer.confirmDragAndDrop": fals,
+  "gitlens.currentLine.enabled": fals,
+  "javascript.format.enable": fals,
+  "javascript.updateImportsOnFileMove.enabled": "always,
+  "javascript.validate.enable": fals,
   "multiCommand.commands": [
     {
-      "command": "multiCommand.commentDown",
-      "sequence": ["editor.action.commentLine", "cursorDown"]
+      "command": "multiCommand.commentDown,
+      "sequence": ["editor.action.commentLine, "cursorDown"]
     }
-  ],
-  "quokka.automaticStartRegex": "\\.(js)$",
-  "tabnine.experimentalAutoImports": true,
-  "telemetry.telemetryLevel": "off",
-  "terminal.integrated.fontSize": 12,
-  "typescript.preferences.importModuleSpecifier": "non-relative",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  ,
+  "quokka.automaticStartRegex": ",
+  "sort-imports.on-save": tru,
+  "svg.preview.mode": "svg,
+  "tabnine.experimentalAutoImports": tru,
+  "telemetry.telemetryLevel": "off,
+  "terminal.integrated.fontSize": 1,
+  "typescript.preferences.importModuleSpecifier": "relative,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue,
   "workbench.colorCustomizations": {
-    "editorSuggestWidget.selectedBackground": "#1f2233",
-    "editorSuggestWidget.background": "#181a1f",
-    "editorSuggestWidget.highlightForeground": "#4bc8e8",
-    "editorSuggestWidget.border": "#0f111a",
-    "editorCursor.foreground": "#ffcc00",
-    "editorCursor.background": "#3b3f51",
-    "editor.selectionBackground": "#3b3f51"
-  },
-  "workbench.colorTheme": "Material Deep Ocean",
-  "workbench.iconTheme": "material-icon-theme",
+    "editor.selectionBackground": "#3b3f51,
+    "editorCursor.background": "#3b3f51,
+    "editorCursor.foreground": "#ffcc00,
+    "editorSuggestWidget.background": "#181a1f,
+    "editorSuggestWidget.border": "#0f111a,
+    "editorSuggestWidget.highlightForeground": "#4bc8e8,
+    "editorSuggestWidget.selectedBackground": "#1f2233"
+  ,
+  "workbench.colorTheme": "Material Deep Ocean,
+  "workbench.iconTheme": "material-icon-theme,
   "workbench.tree.indent": 16
 }
+```
+
+### Shortcuts
+
+```json
+[
+  {
+    "key": "ctrl+/,
+    "command": "multiCommand.commentDown,
+    "when": "editorTextFocus && !editorReadonly"
+  ,
+  {
+    "key": "ctrl+numpad7,
+    "command": "workbench.action.debug.run,
+    "when": "debuggersAvailable && !inDebugMode && !terminalFocus"
+  ,
+  {
+    "key": "shift+f9,
+    "command": "-workbench.action.debug.run,
+    "when": "debuggersAvailable && !inDebugMode && !terminalFocus"
+  }
+]
 ```
 
 ## License
