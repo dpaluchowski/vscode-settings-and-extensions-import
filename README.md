@@ -1,7 +1,10 @@
 # vscode settings and extensions import
 
-It is an executable bash script for installing selected extensions and importing settings into Visual Studio Code.
-**Extensions and settings are mainly configured to work in frontend development and React.js. In addit, it allows you to quite smoothly switch from WebStorm IDE to Visual Studio Code.**
+It is an executable bash script for installing selected extensions and importing settings and shortcuts into Visual Studio Code.
+
+Extensions, settings and shortcuts are mainly configured for the **frontend development**. In addition, it enables a fairly smooth transition from **WebStorm IDE** to **Visual Studio Code**.
+
+The settings use the **[Fira Code](https://github.com/tonsky/FiraCode)** font, so it is also installed when installing extensions and importing settings and shortcuts.
 
 ### Installation
 
@@ -31,6 +34,7 @@ And then try running the file again
 - [Bookmarks (Alessandro Fragnani)](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
 - [Code Spell Checker (Street Side Software)](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 - [Color Highlight (Sergii Naumov)](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
+- [Copy With Imports (stringham)](https://marketplace.visualstudio.com/items?itemName=stringham.copy-with-imports)
 - [Docker (Microsoft)](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
 - [ES7 React/Redux/GraphQL/React-Native snippetss (dsznajder)](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
 - [ESLint (Dirk Baeumer)](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
@@ -52,11 +56,13 @@ And then try running the file again
 - [Python (Microsoft)](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 - [Quokka.js (Wallaby.js)](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode)
 - [REST Client (Huachao Mao)](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
+- [Reveal (smulyono)](https://marketplace.visualstudio.com/items?itemName=smulyono.reveal)
 - [SVG (jock)](https://marketplace.visualstudio.com/items?itemName=jock.svg)
 - [Shortcut Menu Bar (GorvGoyl)](https://marketplace.visualstudio.com/items?itemName=jerrygoyal.shortcut-menu-bar)
 - [Tabnine - Code Faster with the All-Language AI Assistant for Code Complet, autocomplete JavaScr, Pyt, TypeScr, ,, J, node, R, C/, HTML/,, R, , B, Kot, R (TabNine)](https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode)
 - [Terminal (Jun Han)](https://marketplace.visualstudio.com/items?itemName=formulahendry.terminal)
 - [Todo Tree (Gruntfuggly)](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
+- [Vetur (Pine Wu)](https://github.com/helloroman/hr-study-buddy/blob/react-context/.eslintrc#:~:text=plugin%3Aprettier/recommended)
 - [Visual Studio IntelliCode (Microsoft)](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
 - [multi-command (ryuta46)](https://marketplace.visualstudio.com/items?itemName=ryuta46.multi-command)
 - [npm (egamma)](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script)
@@ -64,6 +70,8 @@ And then try running the file again
 - [Polacode (P & P)](https://marketplace.visualstudio.com/items?itemName=pnp.polacode)
 - [sort-imports (VSC Sort Import)](https://marketplace.visualstudio.com/items?itemName=amatiasq.sort-imports)
 - [vscode-styled-components (Julien Poissonnier)](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)
+- [vue (jcbuisson)](https://marketplace.visualstudio.com/items?itemName=jcbuisson.vue)
+- [Vue 3 Snippets (hollowtree)](https://marketplace.visualstudio.com/items?itemName=hollowtree.vue-snippets)
 
 ### Settings
 
@@ -75,7 +83,7 @@ And then try running the file again
   "[python]": { "editor.defaultFormatter": "ms-python.python" },
   "[shellscript]": { "editor.defaultFormatter": "shakram02.bash-beautify" },
   "[svg]": { "editor.defaultFormatter": "jock.svg" },
-  "cSpell.userWords": ["Neutralino", "preconnect"],
+  "cSpell.userWords": ["Neutralino", "browserslist", "preconnect", "testid"],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
     "source.fixAll.tslint": true
@@ -90,6 +98,7 @@ And then try running the file again
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
   "eslint.workingDirectories": [{ "mode": "auto" }],
+  "explorer.autoReveal": true,
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
@@ -112,6 +121,7 @@ And then try running the file again
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.fontSize": 12,
   "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "workbench.colorCustomizations": {
     "editor.selectionBackground": "#3b3f51",
@@ -121,7 +131,7 @@ And then try running the file again
     "editorSuggestWidget.border": "#0f111a",
     "editorSuggestWidget.highlightForeground": "#4bc8e8",
     "editorSuggestWidget.selectedBackground": "#1f2233",
-    "focusBorder": "#84ffff2f"
+    "focusBorder": "#84ffffbe"
   },
   "workbench.colorTheme": "Material Deep Ocean",
   "workbench.iconTheme": "material-icon-theme",
@@ -134,19 +144,23 @@ And then try running the file again
 ```json
 [
   {
-    "key": "ctrl+/",
+    "command": "-workbench.action.debug.run",
+    "key": "shift+f9",
+    "when": "debuggersAvailable && !inDebugMode && !terminalFocus"
+  },
+  {
     "command": "multiCommand.commentDown",
+    "key": "ctrl+/",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+numpad7",
     "command": "workbench.action.debug.run",
+    "key": "ctrl+numpad7",
     "when": "debuggersAvailable && !inDebugMode && !terminalFocus"
   },
   {
-    "key": "shift+f9",
-    "command": "-workbench.action.debug.run",
-    "when": "debuggersAvailable && !inDebugMode && !terminalFocus"
+    "command": "workbench.files.action.showActiveFileInExplorer",
+    "key": "ctrl+shift+q"
   }
 ]
 ```
