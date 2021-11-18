@@ -167,6 +167,6 @@ And then try running the file again
 
 ## License
 
-[MIT](LICENSE.md)
+[MIT](LICENSE)
 
 **Thanks to the authors of the extensions!**
